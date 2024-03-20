@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/cover.png);
+  background-size: cover;
+  position: center;
+}
+
+#container {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#logo {
+  position: relative;
+  padding-top: 20px;
+}
+
+#logo :hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in;
+}
+
+#icons {
+  list-style: none;
+  position: relative;
+  padding-top: 60px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: transform 0.5s;
+}
+
+
+ul li a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+ul li a img {
+  width: 30px;
+  height: auto;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+ul li a .fab {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: color 0.5s;
+}
+
+ul li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+ul li:nth-child(3) a:hover .fab {
+  color: #dd4b39;
+}
+
+ul li:nth-child(4) a:hover .fab {
+  color: #d14040;
+}
+
+ul li:nth-child(5) a:hover img {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(97%) saturate(7516%) hue-rotate(355deg) brightness(101%) contrast(101%);
+}
+
+ul li:nth-child(6) a:hover .fab {
+  color: #b41f9b;
+}
+
+ul li:nth-child(7) a:hover .fab {
+  color: #be0d0d;
+}
+  
+ul li:nth-child(8) a:hover .fab {
+  color: #9843e9;
+}
+
+ul li:nth-child(9) a:hover .fab {
+  color: #007bb6;
+}
+
+#email {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#email a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  width: 65px;
+  height: 50px;
+  background: white;
+  transition: transform 0.5s ease-in-out;
+}
+
+#email a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    margin: 20px 0;
+  }
+
+  #email {
+    margin-top: 20px;
+  }
+}
